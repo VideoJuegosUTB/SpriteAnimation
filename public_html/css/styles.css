@@ -1,0 +1,45 @@
+body{
+  margin:0;
+  padding:0;
+  position: relative;
+  overflow: hidden;
+  font-size: 14px;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.controls{
+  position:absolute;
+  bottom:1em;
+  right: 1em;
+  z-index: 10000;
+  background: rgba(255,255,255,.9);
+  box-shadow: #000 0 0 6px 0px;
+  padding: .2em .3em;
+  border-radius: 3px;
+}
+.controls *{
+  opacity:.8;
+}
+input[type=number]{
+  width:8em;
+  text-align: center;
+}
+select, input{
+  padding: .3em .4em;
+}
+#instances{
+  color:#000;
+  font-size: 1em;
+  top:.5em;
+  left:.5em;
+  display:inline-block;
+  padding: .2em .3em;
+}
+.character{
+  cursor: pointer;
+}
